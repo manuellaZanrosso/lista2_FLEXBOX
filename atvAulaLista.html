@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+
+
+    *{border: 1px solid black;}
+    span{
+        display: inline-block;
+        height: 30px; 
+        width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 10px;
+    }
+    .container{ 
+    display: grid;
+    grid-template-areas: 
+    
+    "header header header"
+    "nav cabecalho cabecalho"
+    "nav conteudo conteudo"
+    "nav rodape rodape"
+    ;
+grid-template-rows: 10svh 40svh 80svh 10svh;
+
+    .header{
+        grid-area:header;
+        display:flex ;
+        align-items: center;
+    }
+    .navegacao{
+        grid-area: nav;
+
+
+    }
+    .cabecalho{grid-area: cabecalho;    }
+    .conteudo{grid-area: conteudo;}
+    .rodape{grid-area: rodape;}
+}
+</style>
+</head>
+<body>
+    <body class="container">
+    <div class="header"> 
+    <span></span><span></span><span></span>        
+    </div>
+    <div class="navegacao"> Navegacao </div>
+    <div class="cabecalho"> cabecalho </div>
+    <div class="conteudo"> conteudo </div>
+    <div class="rodape"> rodape </div>
+
+
+
+
+</body>
+</html>
